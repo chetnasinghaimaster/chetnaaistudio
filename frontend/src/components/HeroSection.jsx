@@ -94,7 +94,7 @@ export default function HeroSection({ onTrack }) {
                 {/* Mockup content */}
                 <div className="mockup-animate">
                   <img
-                    src="https://images.unsplash.com/photo-1693393035675-0edba3ad1492?w=700&q=80"
+                    src="https://images.unsplash.com/photo-1634084462412-b54873c0a56d?w=700&q=80"
                     alt="Premium Website Mockup"
                     className="w-full h-auto"
                     loading="lazy"
