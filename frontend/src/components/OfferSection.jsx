@@ -44,15 +44,10 @@ export default function OfferSection({ onTrack }) {
             <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-[#3B82F6] to-transparent" />
 
             <div className="text-center mb-8">
-              <div className="flex items-center justify-center gap-4 mb-2">
-                <span className="text-2xl text-[#555] price-strike font-['Poppins']">
-                  &#8377;15,000
-                </span>
-                <span className="font-['Poppins'] text-5xl sm:text-6xl font-bold text-white">
-                  &#8377;4,999
-                </span>
-              </div>
-              <p className="text-sm text-[#888]">One-time payment &middot; No hidden fees</p>
+              <p className="font-['Poppins'] text-2xl sm:text-3xl font-bold text-white mb-2">
+                Custom Pricing for Your Business
+              </p>
+              <p className="text-sm text-[#888]">Talk to us on WhatsApp to get a quote tailored to your needs</p>
             </div>
 
             {/* Includes */}
@@ -77,7 +72,7 @@ export default function OfferSection({ onTrack }) {
                 className="btn-shine inline-flex items-center gap-2 bg-[#3B82F6] text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-blue-600 transition-all duration-300 shadow-[0_0_25px_rgba(59,130,246,0.3)]"
                 data-testid="offer-cta-button"
               >
-                Claim This Offer
+                Talk to Us on WhatsApp
                 <ArrowRight size={20} />
               </a>
               <p className="text-xs text-[#555] mt-4">Only 5 project slots per week</p>
