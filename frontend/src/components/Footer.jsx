@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { WHATSAPP_LINK } from '../lib/constants';
 
 export default function Footer() {
@@ -16,6 +17,7 @@ export default function Footer() {
             <a href="#services" className="hover:text-white transition-colors">Services</a>
             <a href="#portfolio" className="hover:text-white transition-colors">Portfolio</a>
             <a href="#offer" className="hover:text-white transition-colors">Pricing</a>
+            <Link to="/blog" className="hover:text-white transition-colors" data-testid="footer-blog-link">Blog</Link>
             <a
               href={WHATSAPP_LINK}
               target="_blank"
