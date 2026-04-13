@@ -1,0 +1,98 @@
+{
+  "theme": "dark",
+  "archetype": "Archetype 4 (Swiss & High-Contrast) adapted for Luxury Tech (Apple/Stripe inspired)",
+  "colors": {
+    "background": "#0A0A0A",
+    "foreground": "#FFFFFF",
+    "accent": "#3B82F6",
+    "surface": "#121212",
+    "surface_glass": "rgba(255, 255, 255, 0.03)",
+    "border": "rgba(255, 255, 255, 0.08)",
+    "text_muted": "#888888",
+    "hover_glow": "rgba(59, 130, 246, 0.3)"
+  },
+  "typography": {
+    "headings_font": "Poppins",
+    "body_font": "Inter",
+    "hierarchy": {
+      "h1": "text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tighter leading-tight",
+      "h2": "text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight",
+      "h3": "text-2xl sm:text-3xl font-semibold tracking-tight",
+      "h4": "text-xl font-medium",
+      "body": "text-base sm:text-lg leading-relaxed text-[#888888]",
+      "overline": "text-sm uppercase tracking-[0.2em] text-[#3B82F6] font-semibold"
+    }
+  },
+  "spacing_and_layout": {
+    "section_padding": "py-24 md:py-32",
+    "container_padding": "px-6 md:px-12",
+    "bento_grid_gap": "gap-6 md:gap-8",
+    "border_radius": {
+      "card": "rounded-2xl",
+      "button": "rounded-full"
+    }
+  },
+  "surface_strategies": {
+    "header": "Crystal Glass: bg-[#0A0A0A]/60 backdrop-blur-xl border-b border-white/5",
+    "cards": "Solid surface #121212 with 1px border-white/5. Hover effect: subtle lift -translate-y-1 and glow shadow.",
+    "buttons": "Primary: bg-[#FFFFFF] text-[#0A0A0A] hover:bg-gray-200 transition-all. Secondary/Accent: bg-[#3B82F6] text-white hover:bg-blue-600 shadow-[0_0_15px_rgba(59,130,246,0.3)]."
+  },
+  "animations": {
+    "scroll": "Smooth scrolling using Lenis (if available, else smooth CSS). Elements fade-in and translate-y-4 on scroll.",
+    "hover_state": "All interactive elements must have transition-all duration-300. Cards should subtle scale (1.02) and borders illuminate."
+  },
+  "components_instructions": {
+    "hero": "Center aligned. Overline text 'Chetna AI Studio'. Massive H1. CTA buttons. Below text, an animated mockup image floating with a subtle blue under-glow.",
+    "problem_story": "Use overlapping sticky cards or a vertical timeline to show the 'Bad Design Costs You Money' story.",
+    "solution_3_step": "3-column grid. Minimalist icons. Tracing beam / glowing border effect on cards.",
+    "services": "Bento Grid layout (Mode A). 4 categories: Core Web Design (span 2), Branding (span 1), Growth (span 1), Automation (span 2).",
+    "portfolio": "High-quality project images in a responsive grid. Hover reveals 'View Case Study'. Slider for Before/After if feasible, otherwise side-by-side.",
+    "offer_section": "High contrast section. Highlight the 'Starter Package'. Strikethrough ₹15,000, prominent ₹4,999. Urgency/Scarcity text below CTA.",
+    "testimonials": "Carousel or horizontal scroll. Clean avatars. 5-star icons.",
+    "floating_elements": "Floating WhatsApp button bottom-right (green or brand blue). Sticky bottom CTA on mobile viewports for high conversion.",
+    "forms": "Minimalist lead capture form (Name, Email, Phone, Needs) styled with Shadcn UI but customized for dark theme. Submit buttons redirect to WhatsApp."
+  },
+  "media": {
+    "hero_mockup": {
+      "url": "https://images.unsplash.com/photo-1763718528755-4bca23f82ac3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxNzV8MHwxfHNlYXJjaHw0fHxkYXNoYm9hcmQlMjB1aSUyMGRhcmslMjBtb2RlfGVufDB8fHx8MTc3NjEwMzg4Nnww&ixlib=rb-4.1.0&q=85",
+      "alt": "Premium Dark Mode UI Mockup"
+    },
+    "abstract_background": {
+      "url": "https://images.unsplash.com/photo-1773558057883-c15a220761ce?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMGRhcmslMjBiYWNrZ3JvdW5kJTIwYmx1ZSUyMG5lb258ZW58MHx8fHwxNzc2MTAzODg2fDA&ixlib=rb-4.1.0&q=85",
+      "alt": "Abstract blue light"
+    },
+    "portfolio_images": [
+      {
+        "url": "https://images.unsplash.com/photo-1693393035675-0edba3ad1492?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxNzV8MHwxfHNlYXJjaHwzfHxkYXNoYm9hcmQlMjB1aSUyMGRhcmslMjBtb2RlfGVufDB8fHx8MTc3NjEwMzg4Nnww&ixlib=rb-4.1.0&q=85",
+        "alt": "Project Alpha"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1720135885007-454165745e21?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxNzV8MHwxfHNlYXJjaHwyfHxkYXNoYm9hcmQlMjB1aSUyMGRhcmslMjBtb2RlfGVufDB8fHx8MTc3NjEwMzg4Nnww&ixlib=rb-4.1.0&q=85",
+        "alt": "Project Beta"
+      }
+    ],
+    "client_logos": [
+      {
+        "url": "https://images.unsplash.com/photo-1758560902402-0785e1ff77db?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNzl8MHwxfHNlYXJjaHwzfHxicmFuZCUyMGxvZ28lMjB3aGl0ZXxlbnwwfHx8fDE3NzYxMDM4NTh8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Client 1"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1555274175-75f4056dfd05?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNzl8MHwxfHNlYXJjaHw0fHxicmFuZCUyMGxvZ28lMjB3aGl0ZXxlbnwwfHx8fDE3NzYxMDM4NTh8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Client 2"
+      }
+    ],
+    "testimonial_avatars": [
+      {
+        "url": "https://images.unsplash.com/photo-1758518727888-ffa196002e59?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHwzfHxidXNpbmVzcyUyMHBlcnNvbiUyMHBvcnRyYWl0JTIwcHJvZmVzc2lvbmFsfGVufDB8fHx8MTc3NjEwMzg1OHww&ixlib=rb-4.1.0&q=85",
+        "alt": "Sarah J."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1770058428154-9eee8a6a1fbb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHw0fHxidXNpbmVzcyUyMHBlcnNvbiUyMHBvcnRyYWl0JTIwcHJvZmVzc2lvbmFsfGVufDB8fHx8MTc3NjEwMzg1OHww&ixlib=rb-4.1.0&q=85",
+        "alt": "Michael T."
+      }
+    ]
+  },
+  "testing": {
+    "attributes": "Ensure all interactive elements (buttons, form inputs, toggles, chatbot triggers) include data-testid attributes formatted in kebab-case based on their role (e.g., data-testid='hero-cta-button', data-testid='whatsapp-floating-button')."
+  }
+}
