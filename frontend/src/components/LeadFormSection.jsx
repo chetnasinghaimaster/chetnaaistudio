@@ -1,4 +1,6 @@
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import { CONTACT_EMAIL } from '../lib/constants';
+import { Mail } from 'lucide-react';
 import LeadForm from './LeadForm';
 
 export default function LeadFormSection({ onTrack }) {
@@ -39,6 +41,19 @@ export default function LeadFormSection({ onTrack }) {
                 <div className="w-2 h-2 rounded-full bg-[#3B82F6]" />
                 <span className="text-sm text-[#ccc]">Response within 24 hours</span>
               </div>
+            </div>
+
+            {/* Email contact */}
+            <div className="mt-8 pt-6 border-t border-white/5">
+              <p className="text-xs text-[#555] uppercase tracking-wider mb-2">Or email us directly</p>
+              <a
+                href={`mailto:${CONTACT_EMAIL}`}
+                className="inline-flex items-center gap-2 text-[#3B82F6] hover:text-blue-400 transition-colors text-sm font-medium"
+                data-testid="contact-email-link"
+              >
+                <Mail size={16} />
+                {CONTACT_EMAIL}
+              </a>
             </div>
           </div>
 

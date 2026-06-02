@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
-import { WHATSAPP_LINK } from '../lib/constants';
+import { Menu, X, Mail } from 'lucide-react';
+import { WHATSAPP_LINK, CONTACT_EMAIL } from '../lib/constants';
 
 const NAV_ITEMS = [
   { label: 'Services', href: '#services' },
@@ -72,6 +72,14 @@ export default function Header({ onTrack }) {
               )
             ))}
             <a
+              href={`mailto:${CONTACT_EMAIL}`}
+              className="text-sm text-[#888] hover:text-white transition-colors duration-300"
+              data-testid="nav-email"
+              title={CONTACT_EMAIL}
+            >
+              <Mail size={16} />
+            </a>
+            <a
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
@@ -119,6 +127,13 @@ export default function Header({ onTrack }) {
                 </a>
               )
             ))}
+            <a
+              href={`mailto:${CONTACT_EMAIL}`}
+              className="text-[#888] hover:text-white transition-colors py-2 flex items-center gap-2"
+            >
+              <Mail size={16} />
+              {CONTACT_EMAIL}
+            </a>
             <a
               href={WHATSAPP_LINK}
               target="_blank"

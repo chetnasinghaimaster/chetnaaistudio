@@ -2,6 +2,8 @@ const WHATSAPP_NUMBER = '919326505598';
 
 export const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=Hi%20I%20want%20a%20free%20website%20audit`;
 
+export const CONTACT_EMAIL = 'chetnaaistudio@gmail.com';
+
 export const getWhatsAppLink = (message) => {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 };

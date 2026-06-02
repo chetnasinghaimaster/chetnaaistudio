@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import { WHATSAPP_LINK } from '../lib/constants';
+import { WHATSAPP_LINK, CONTACT_EMAIL } from '../lib/constants';
+import { Mail } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -26,6 +27,14 @@ export default function Footer() {
               data-testid="footer-whatsapp-link"
             >
               WhatsApp
+            </a>
+            <a
+              href={`mailto:${CONTACT_EMAIL}`}
+              className="hover:text-white transition-colors flex items-center gap-1"
+              data-testid="footer-email-link"
+            >
+              <Mail size={14} />
+              {CONTACT_EMAIL}
             </a>
           </div>
 
