@@ -124,7 +124,8 @@ async def create_lead(input_data: LeadCreate):
     return lead
 
 @api_router.get("/leads", response_model=List[Lead])
-async def get_leads():
+async def get_leads(x_admin_password: str = Header(None)):
+    verify_admin(x_admin_password)
     leads = await db.leads.find({}, {"_id": 0}).to_list(1000)
     return leads
 
