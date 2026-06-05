@@ -18,12 +18,18 @@ ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
 
 mongo_url = os.environ['MONGO_URL']
-client = AsyncIOMotorClient(mongo_url)
+client = AsyncIOMotorClient(mongo_url, serverSelectionTimeoutMS=5000, connectTimeoutMS=5000)
 db = client[os.environ['DB_NAME']]
 ADMIN_PASSWORD = os.environ.get('ADMIN_PASSWORD', '')
 
 app = FastAPI()
 api_router = APIRouter(prefix="/api")
+
+
+# Root health check for Kubernetes
+@app.get("/")
+async def health_check():
+    return {"status": "healthy"}
 
 
 def verify_admin(x_admin_password: str = Header(None)):
